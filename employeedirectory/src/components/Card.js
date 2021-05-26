@@ -5,18 +5,20 @@ function Card (props) {
         <table className="table">
   <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col"></th>
+      <th scope="col">Name</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Email</th>
+      <th scope="col">DOB</th>-
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>{props.firstName}</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+    <td><img src={props.picture}></img></td>
+    <td>{props.firstName} {props.lastName}</td>
+    <td >{props.phone}</td>
+    <td >{props.email}</td>
+    <td>{props.dob}</td>
     </tr>
   </tbody>
 </table>
